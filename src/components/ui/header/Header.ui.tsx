@@ -26,14 +26,18 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="text-gray-600 body-font shadow-md">
+    <header className="bg-white text-gray-600 body-font shadow-md sticky top-0">
       <div className="flex justify-between p-5 items-center">
-        <div className="flex items-center gap-1 text-xl">
+        <a
+          href="/"
+          title="トップページへ戻る"
+          className="flex items-center gap-1 text-xl"
+        >
           <p>
             <img className="w-6 h-6" src={FrogIcon} alt="Frog" />
           </p>
           <p>Yo !</p>
-        </div>
+        </a>
 
         <div className="flex items-center gap-4">
           <div ref={dropdownRef} className="relative">
@@ -52,7 +56,13 @@ const Header: React.FC = () => {
               </div>
             )}
           </div>
-          <img className="w-6 h-6" src={GithubIcon} alt="Github" />
+          <a
+            href="https://github.com/moppiiiii/kaeruyo"
+            title="GitHub"
+            target="_blank"
+          >
+            <img className="w-6 h-6" src={GithubIcon} alt="Github" />
+          </a>
         </div>
       </div>
     </header>
