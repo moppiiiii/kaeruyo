@@ -1,12 +1,7 @@
-import Header from "../../ui/header/Header.ui";
+import BaseLayout from "../../layouts/BaseLayout.layout";
 
 const HomeTemplate: React.FC = () => {
-  return (
-    <div>
-      <Header />
-      Home
-    </div>
-  );
+  return <BaseLayout>Home</BaseLayout>;
 };
 
 export default HomeTemplate;
