@@ -1,4 +1,4 @@
-import Header from "../../ui/Header.ui";
+import Header from "../../ui/header/Header.ui";
 
 const HomeTemplate: React.FC = () => {
   return (
