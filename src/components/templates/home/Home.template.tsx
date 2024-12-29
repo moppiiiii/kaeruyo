@@ -1,11 +1,10 @@
-import Header from "../../ui/Header.ui";
+import BaseLayout from "@/components/layouts/base/Base.layout";
 
-const HomeTemplate: React.FC = () => {
+const HomeTemplate = () => {
   return (
-    <div>
-      <Header />
-      Home
-    </div>
+    <BaseLayout>
+      <div className="p-4">HOME</div>
+    </BaseLayout>
   );
 };
 
