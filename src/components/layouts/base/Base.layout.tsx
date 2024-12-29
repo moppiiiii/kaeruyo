@@ -4,9 +4,9 @@ import Footer from "@/components/ui/footer/Footer.ui";
 
 const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      {children}
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );
