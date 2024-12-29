@@ -1,5 +1,5 @@
 {
-  "entry": ["src/app/page.tsx"],
+  "entry": ["src/main.tsx"],
   "project": ["src/**/*.ts", "src/**/*.tsx"],
-  "ignore": ["**/*.d.ts", "package.json", "postcss.config.ts", "tailwind.config.ts"]
+  "ignore": ["**/*.d.ts"]
 }
