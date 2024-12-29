@@ -6,8 +6,8 @@ import MoonIcon from "@/assets/icons/moon-solid.svg";
 import SunIcon from "@/assets/icons/sun-solid.svg";
 import LaptopIcon from "@/assets/icons/laptop-solid.svg";
 import GithubIcon from "@/assets/icons/github-brands-solid.svg";
-import { Separator } from "../separator/Separator.ui";
-import { Avatar, AvatarFallback, AvatarImage } from "../avatar/Avatar.ui";
+// import { Separator } from "../separator/Separator.ui";
+// import { Avatar, AvatarFallback, AvatarImage } from "../avatar/Avatar.ui";
 import { Button } from "../button/Button.ui";
 import {
   DropdownMenu,
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
   }, [theme]);
 
   return (
-    <header className="flex justify-between items-center p-4 shadow-md">
+    <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800">
       <div className="flex items-center gap-2">
         <Image src={FrogIcon} alt="frog" width={20} height={20} />
         <p>yo!</p>
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-4">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="border-0">
+            <Button variant="ghost" className="border-0 p-0">
               <Image
                 src={
                   theme === "dark"
@@ -59,8 +59,8 @@ const Header: React.FC = () => {
                       : LaptopIcon
                 }
                 alt="theme"
-                width={16}
-                height={16}
+                width={20}
+                height={20}
               />
             </Button>
           </DropdownMenuTrigger>
@@ -111,11 +111,11 @@ const Header: React.FC = () => {
         >
           <Image src={GithubIcon} alt="github" width={20} height={20} />
         </a>
-        <Separator orientation="vertical" className="h-4" />
+        {/* <Separator orientation="vertical" className="h-4" />
         <Avatar className="size-6">
           <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
           <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        </Avatar> */}
       </div>
     </header>
   );
