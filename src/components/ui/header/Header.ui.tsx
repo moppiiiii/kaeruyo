@@ -46,10 +46,10 @@ const Header: React.FC = () => {
         <Image src={FrogIcon} alt="frog" width={20} height={20} />
         <p>yo!</p>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="border-0 p-0">
+            <Button variant="ghost" className="border-0">
               <Image
                 src={
                   theme === "dark"
