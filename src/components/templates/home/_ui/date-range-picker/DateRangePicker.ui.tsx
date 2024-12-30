@@ -34,7 +34,7 @@ export function DateRangePicker({ date, onDateChange }: DateRangePickerProps) {
   };
 
   return (
-    <Popover>
+    <Popover modal={true}>
       <PopoverTrigger asChild>
         <Button
           id="date"
