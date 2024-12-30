@@ -44,7 +44,11 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="border-0">
+            <Button
+              variant="ghost"
+              className="border-0"
+              aria-label="theme-changer"
+            >
               {theme === "dark" ? (
                 <Moon />
               ) : theme === "light" ? (

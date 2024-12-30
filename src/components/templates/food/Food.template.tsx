@@ -370,6 +370,7 @@ const FoodTemplate: React.FC = () => {
           <SheetTrigger
             className="fixed right-4 bottom-10 w-fit mx-auto p-2 rounded-full bg-green-600/30 backdrop-blur-lg
     rounded-full border shadow-lg z-10"
+            aria-label="food-register"
           >
             <Plus />
           </SheetTrigger>
