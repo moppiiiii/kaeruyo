@@ -16,8 +16,15 @@ import {
   ScrollBar,
 } from "@/components/ui/scroll-area/ScrollArea.ui";
 import { Separator } from "@/components/ui/separator/Separator.ui";
-import Image from "next/image";
-import FoodIcon from "@/assets/icons/bowl-food-solid.svg";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet/Sheet.ui";
+import { Plus, Soup } from "lucide-react";
 
 const FoodTemplate: React.FC = () => {
   return (
@@ -40,14 +47,8 @@ const FoodTemplate: React.FC = () => {
           <CardContent>
             <div className="flex justify-center">
               <div className="flex flex-col justify-center items-center">
-                <div>
-                  <Image
-                    src={FoodIcon}
-                    alt="food"
-                    width={40}
-                    height={20}
-                    className="p-2"
-                  />
+                <div className="p-2">
+                  <Soup />
                 </div>
                 <Separator className="w-10" />
                 <p className="p-2">昼</p>
@@ -214,14 +215,8 @@ const FoodTemplate: React.FC = () => {
           <CardContent>
             <div className="flex justify-center">
               <div className="flex flex-col justify-center items-center">
-                <div>
-                  <Image
-                    src={FoodIcon}
-                    alt="food"
-                    width={40}
-                    height={20}
-                    className="p-2"
-                  />
+                <div className="p-2">
+                  <Soup />
                 </div>
                 <Separator className="w-10" />
                 <p className="p-2">昼</p>
@@ -371,6 +366,23 @@ const FoodTemplate: React.FC = () => {
             </div>
           </CardContent>
         </Card>
+        <Sheet key={"bottom"}>
+          <SheetTrigger
+            className="fixed right-4 bottom-10 w-fit mx-auto p-2 rounded-full bg-green-600/30 backdrop-blur-lg
+    rounded-full border shadow-lg z-10"
+          >
+            <Plus />
+          </SheetTrigger>
+          <SheetContent side={"bottom"}>
+            <SheetHeader>
+              <SheetTitle>Are you absolutely sure?</SheetTitle>
+              <SheetDescription>
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our servers.
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
       </div>
     </BaseLayout>
   );
