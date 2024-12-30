@@ -1,0 +1,27 @@
+/* FullCalender のスタイル */
+/* 直接 Tailwind でスタイルを適用できない為、apply を使用 */
+
+/* カレンダーヘッダーのスタイル */
+.fc-col-header {
+  @apply bg-white dark:bg-gray-900;
+}
+
+/* カレンダーヘッダー内のテキストスタイル */
+.fc-col-header-cell-cushion {
+  @apply text-sm font-normal font-mono;
+}
+
+/* カレンダーの日付のスタイル */
+.fc-daygrid-day-number {
+  @apply text-sm font-normal font-mono;
+}
+
+/* 今日の日付のスタイル */
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-yellow-200 dark:bg-yellow-800;
+}
+
+/* イベントのメインスタイル */
+.fc-event-main {
+  @apply p-2;
+}
