@@ -14,6 +14,7 @@ import {
 import { useThemeStore } from "@/store/theme/";
 import { useEffect } from "react";
 import { Moon, Sun, Laptop, Github } from "lucide-react";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useThemeStore();
@@ -37,10 +38,10 @@ const Header: React.FC = () => {
 
   return (
     <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800 z-10">
-      <div className="flex items-center gap-2">
+      <Link href="/" title="home" className="flex items-center gap-2">
         <Image src={FrogIcon} alt="frog" className="w-5 h-5" />
         <p>yo!</p>
-      </div>
+      </Link>
       <div className="flex items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
