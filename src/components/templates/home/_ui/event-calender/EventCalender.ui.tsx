@@ -64,13 +64,21 @@ const EventCalender = () => {
       <div className="flex justify-between items-center pb-4">
         <p className="text-lg">{today.toLocaleDateString("ja-JP")}</p>
         <div className="flex gap-2">
-          <Button variant="outline" onClick={onClickPrev}>
+          <Button
+            variant="outline"
+            onClick={onClickPrev}
+            aria-label="prev-month"
+          >
             <ChevronLeft className="w-4 h-4" />
           </Button>
-          <Button variant="outline" onClick={onClickToday}>
+          <Button variant="outline" onClick={onClickToday} aria-label="today">
             today
           </Button>
-          <Button variant="outline" onClick={onClickNext}>
+          <Button
+            variant="outline"
+            onClick={onClickNext}
+            aria-label="next-month"
+          >
             <ChevronRight className="w-4 h-4" />
           </Button>
         </div>

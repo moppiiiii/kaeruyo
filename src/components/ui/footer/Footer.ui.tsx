@@ -50,13 +50,25 @@ const Footer = () => {
         onValueChange={handleValueChange}
         className="gap-4"
       >
-        <ToggleGroupItem value="home" className="rounded-full">
+        <ToggleGroupItem
+          value="home"
+          className="rounded-full"
+          aria-label="home"
+        >
           <House />
         </ToggleGroupItem>
-        <ToggleGroupItem value="food" className="rounded-full">
+        <ToggleGroupItem
+          value="food"
+          className="rounded-full"
+          aria-label="food"
+        >
           <Soup />
         </ToggleGroupItem>
-        <ToggleGroupItem value="profile" className="rounded-full">
+        <ToggleGroupItem
+          value="profile"
+          className="rounded-full"
+          aria-label="profile"
+        >
           <Avatar className="size-5">
             <AvatarImage
               src="https://github.com/shadcn.png"
