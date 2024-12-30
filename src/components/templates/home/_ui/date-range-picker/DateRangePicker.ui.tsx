@@ -66,7 +66,7 @@ export function DateRangePicker({ date, onDateChange }: DateRangePickerProps) {
           defaultMonth={dateRange?.from}
           selected={dateRange}
           onSelect={handleDateSelect}
-          numberOfMonths={2}
+          numberOfMonths={1}
         />
       </PopoverContent>
     </Popover>
