@@ -6,8 +6,6 @@ import MoonIcon from "@/assets/icons/moon-solid.svg";
 import SunIcon from "@/assets/icons/sun-solid.svg";
 import LaptopIcon from "@/assets/icons/laptop-solid.svg";
 import GithubIcon from "@/assets/icons/github-brands-solid.svg";
-// import { Separator } from "../separator/Separator.ui";
-// import { Avatar, AvatarFallback, AvatarImage } from "../avatar/Avatar.ui";
 import { Button } from "../button/Button.ui";
 import {
   DropdownMenu,
@@ -41,12 +39,12 @@ const Header: React.FC = () => {
   }, [theme]);
 
   return (
-    <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800">
+    <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800 z-10">
       <div className="flex items-center gap-2">
         <Image src={FrogIcon} alt="frog" width={20} height={20} />
         <p>yo!</p>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="border-0">
@@ -111,11 +109,6 @@ const Header: React.FC = () => {
         >
           <Image src={GithubIcon} alt="github" width={20} height={20} />
         </a>
-        {/* <Separator orientation="vertical" className="h-4" />
-        <Avatar className="size-6">
-          <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar> */}
       </div>
     </header>
   );
