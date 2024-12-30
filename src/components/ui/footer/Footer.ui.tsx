@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <footer
       className="sticky bottom-8 w-fit mx-auto px-4 py-2 rounded-full bg-green-600/30 backdrop-blur-lg
-    rounded-full border shadow-lg"
+    rounded-full border shadow-lg z-10"
     >
       <ToggleGroup
         type="single"
