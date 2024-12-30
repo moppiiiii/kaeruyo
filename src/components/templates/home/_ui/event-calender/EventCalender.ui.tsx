@@ -1,18 +1,16 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
-import { Button } from "../button/Button.ui";
-import AngleLeftIcon from "@/assets/icons/angle-left-solid.svg";
-import AngleRightIcon from "@/assets/icons/angle-right-solid.svg";
+import { Button } from "@/components/ui/button/Button.ui";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import "./Calender.css";
+import "./EventCalender.css";
 
 type FullCalendarRef = InstanceType<typeof FullCalendar>;
 
-const Calender = () => {
+const EventCalender = () => {
   const today = new Date();
   const calendarRef = useRef<FullCalendarRef>(null);
   const [month, setMonth] = useState<string>(
@@ -67,13 +65,13 @@ const Calender = () => {
         <p className="text-lg">{today.toLocaleDateString("ja-JP")}</p>
         <div className="flex gap-2">
           <Button variant="outline" onClick={onClickPrev}>
-            <Image src={AngleLeftIcon} alt="prev" width={10} height={10} />
+            <ChevronLeft className="w-4 h-4" />
           </Button>
           <Button variant="outline" onClick={onClickToday}>
             today
           </Button>
           <Button variant="outline" onClick={onClickNext}>
-            <Image src={AngleRightIcon} alt="next" width={10} height={10} />
+            <ChevronRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
@@ -112,4 +110,4 @@ const Calender = () => {
   );
 };
 
-export default Calender;
+export default EventCalender;

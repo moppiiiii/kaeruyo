@@ -2,10 +2,6 @@
 
 import Image from "next/image";
 import FrogIcon from "@/assets/icons/frog-solid.svg";
-import MoonIcon from "@/assets/icons/moon-solid.svg";
-import SunIcon from "@/assets/icons/sun-solid.svg";
-import LaptopIcon from "@/assets/icons/laptop-solid.svg";
-import GithubIcon from "@/assets/icons/github-brands-solid.svg";
 import { Button } from "../button/Button.ui";
 import {
   DropdownMenu,
@@ -17,6 +13,7 @@ import {
 } from "@radix-ui/react-dropdown-menu";
 import { useThemeStore } from "@/store/theme/";
 import { useEffect } from "react";
+import { Moon, Sun, Laptop, Github } from "lucide-react";
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useThemeStore();
@@ -41,25 +38,20 @@ const Header: React.FC = () => {
   return (
     <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800 z-10">
       <div className="flex items-center gap-2">
-        <Image src={FrogIcon} alt="frog" width={20} height={20} />
+        <Image src={FrogIcon} alt="frog" className="w-5 h-5" />
         <p>yo!</p>
       </div>
       <div className="flex items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="border-0">
-              <Image
-                src={
-                  theme === "dark"
-                    ? MoonIcon
-                    : theme === "light"
-                      ? SunIcon
-                      : LaptopIcon
-                }
-                alt="theme"
-                width={20}
-                height={20}
-              />
+              {theme === "dark" ? (
+                <Moon />
+              ) : theme === "light" ? (
+                <Sun />
+              ) : (
+                <Laptop />
+              )}
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md w-max">
@@ -75,8 +67,8 @@ const Header: React.FC = () => {
                 className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <div className="flex items-center gap-2">
-                  <Image src={SunIcon} alt="light" width={16} height={16} />
-                  <p>Light</p>
+                  <Sun className="w-4 h-4" />
+                  <p className="text-sm">Light</p>
                 </div>
               </DropdownMenuRadioItem>
               <DropdownMenuRadioItem
@@ -84,8 +76,8 @@ const Header: React.FC = () => {
                 className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <div className="flex items-center gap-2">
-                  <Image src={MoonIcon} alt="dark" width={14} height={14} />
-                  <p>Dark</p>
+                  <Moon className="w-4 h-4" />
+                  <p className="text-sm">Dark</p>
                 </div>
               </DropdownMenuRadioItem>
               <DropdownMenuRadioItem
@@ -93,8 +85,8 @@ const Header: React.FC = () => {
                 className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <div className="flex items-center gap-2">
-                  <Image src={LaptopIcon} alt="system" width={16} height={16} />
-                  <p>System</p>
+                  <Laptop className="w-4 h-4" />
+                  <p className="text-sm">System</p>
                 </div>
               </DropdownMenuRadioItem>
             </DropdownMenuRadioGroup>
@@ -107,7 +99,7 @@ const Header: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={GithubIcon} alt="github" width={20} height={20} />
+          <Github className="w-4 h-4" />
         </a>
       </div>
     </header>

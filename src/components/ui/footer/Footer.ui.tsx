@@ -1,11 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import HouseIcon from "@/assets/icons/house-solid.svg";
-import BowlFoodIcon from "@/assets/icons/bowl-food-solid.svg";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
 import { ToggleGroup, ToggleGroupItem } from "../toggle/ToggleGroup";
+import { House, Soup } from "lucide-react";
 
 const Footer = () => {
   const router = useRouter();
@@ -53,10 +51,10 @@ const Footer = () => {
         className="gap-4"
       >
         <ToggleGroupItem value="home" className="rounded-full">
-          <Image src={HouseIcon} alt="frog" width={20} height={20} />
+          <House />
         </ToggleGroupItem>
         <ToggleGroupItem value="food" className="rounded-full">
-          <Image src={BowlFoodIcon} alt="frog" width={20} height={20} />
+          <Soup />
         </ToggleGroupItem>
         <ToggleGroupItem value="profile" className="rounded-full">
           <Avatar className="size-5">
