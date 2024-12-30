@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -13,7 +13,23 @@ import "./Calender.css";
 type FullCalendarRef = InstanceType<typeof FullCalendar>;
 
 const Calender = () => {
+  const today = new Date();
   const calendarRef = useRef<FullCalendarRef>(null);
+  const [month, setMonth] = useState<string>(
+    today.toLocaleDateString("ja-JP", { year: "numeric", month: "long" }),
+  );
+
+  /**
+   * カレンダーの月を設定
+   */
+  const setCalendarMonth = () => {
+    if (!calendarRef.current) return;
+    const calendarApi = calendarRef.current?.getApi();
+    const month = calendarApi.getDate();
+    setMonth(
+      month.toLocaleDateString("ja-JP", { year: "numeric", month: "long" }),
+    );
+  };
 
   /**
    * 前の月を表示
@@ -22,6 +38,7 @@ const Calender = () => {
     if (!calendarRef.current) return;
     const calendarApi = calendarRef.current.getApi();
     calendarApi.prev();
+    setCalendarMonth();
   };
 
   /**
@@ -31,6 +48,7 @@ const Calender = () => {
     if (!calendarRef.current) return;
     const calendarApi = calendarRef.current.getApi();
     calendarApi.today();
+    setCalendarMonth();
   };
 
   /**
@@ -40,12 +58,13 @@ const Calender = () => {
     if (!calendarRef.current) return;
     const calendarApi = calendarRef.current.getApi();
     calendarApi.next();
+    setCalendarMonth();
   };
 
   return (
     <div>
       <div className="flex justify-between items-center pb-4">
-        <p className="text-lg">{new Date().toLocaleDateString("ja-JP")}</p>
+        <p className="text-lg">{today.toLocaleDateString("ja-JP")}</p>
         <div className="flex gap-2">
           <Button variant="outline" onClick={onClickPrev}>
             <Image src={AngleLeftIcon} alt="prev" width={10} height={10} />
@@ -57,6 +76,9 @@ const Calender = () => {
             <Image src={AngleRightIcon} alt="next" width={10} height={10} />
           </Button>
         </div>
+      </div>
+      <div className="flex justify-end">
+        <p className="text-center text-lg">{month}</p>
       </div>
       <div className="shadow-md">
         <FullCalendar
