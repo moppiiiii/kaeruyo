@@ -12,29 +12,14 @@ import {
   DropdownMenuRadioItem,
 } from "@radix-ui/react-dropdown-menu";
 import { useThemeStore } from "@/store/theme/";
-import { useEffect } from "react";
+import { useThemeEffect } from "@/hooks/theme/useThemeEffect";
 import { Moon, Sun, Laptop, Github } from "lucide-react";
 import Link from "next/link";
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useThemeStore();
 
-  useEffect(() => {
-    // システムテーマの場合、メディアクエリを監視
-    if (theme === "system") {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      const handleChange = (e: MediaQueryListEvent) => {
-        document.documentElement.classList.toggle("dark", e.matches);
-      };
-
-      document.documentElement.classList.toggle("dark", mediaQuery.matches);
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
-    }
-
-    // ライト/ダークモードの場合
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
+  useThemeEffect(theme);
 
   return (
     <header className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white dark:bg-gray-800 z-10">

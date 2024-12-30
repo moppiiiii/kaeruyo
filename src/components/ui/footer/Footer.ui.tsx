@@ -9,7 +9,10 @@ const Footer = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  // パスに基づいて現在の値を決定
+  /**
+   * パスに基づいて現在の値を決定
+   * @returns 現在の値
+   */
   const getCurrentValue = () => {
     switch (pathname) {
       case "/":
@@ -23,7 +26,10 @@ const Footer = () => {
     }
   };
 
-  // トグル変更時の処理
+  /**
+   * トグル変更時の処理
+   * @param value 選択された値
+   */
   const handleValueChange = (value: string) => {
     if (!value) return;
     switch (value) {
