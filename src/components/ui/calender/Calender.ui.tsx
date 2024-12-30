@@ -45,7 +45,7 @@ const Calender = () => {
   return (
     <div>
       <div className="flex justify-between items-center pb-4">
-        <p className="text-lg">2024/12/30</p>
+        <p className="text-lg">{new Date().toLocaleDateString("ja-JP")}</p>
         <div className="flex gap-2">
           <Button variant="outline" onClick={onClickPrev}>
             <Image src={AngleLeftIcon} alt="prev" width={10} height={10} />
@@ -72,14 +72,16 @@ const Calender = () => {
               title: "my event",
               start: "2024-12-26",
               end: "2025-01-02",
-              color: "red",
+              allDay: true,
+              color: "green",
             },
             {
               id: "b",
               title: "my event",
               start: "2024-12-26",
               end: "2025-01-03",
-              color: "blue",
+              allDay: true,
+              color: "purple",
             },
           ]}
         />
