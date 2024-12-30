@@ -46,7 +46,7 @@ const ScheduleRegisterSheet = () => {
   return (
     <Sheet key={"bottom"}>
       <SheetTrigger
-        className="fixed right-4 bottom-10 w-fit mx-auto p-2 rounded-full bg-green-600/30 backdrop-blur-lg
+        className="fixed right-5 bottom-[38px] w-fit mx-auto p-2 rounded-full bg-green-600/30 backdrop-blur-lg
 rounded-full border shadow-lg z-10"
         aria-label="schedule-register-sheet"
       >
