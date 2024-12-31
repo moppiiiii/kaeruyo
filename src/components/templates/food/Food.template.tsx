@@ -24,7 +24,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet/Sheet.ui";
-import { Plus, Soup } from "lucide-react";
+import { Plus, Soup, Circle, X } from "lucide-react";
 
 const FoodTemplate: React.FC = () => {
   return (
@@ -61,135 +61,135 @@ const FoodTemplate: React.FC = () => {
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">26</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">27</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">28</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">29</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">30</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-centerr">31</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">1</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">2</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">3</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">4</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">5</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">6</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">7</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">8</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">9</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                 </div>
@@ -229,135 +229,135 @@ const FoodTemplate: React.FC = () => {
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">26</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">27</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">28</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">29</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">30</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-centerr">31</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">1</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">2</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">3</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">4</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">5</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">6</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">7</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">8</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                   <div className="shrink-0">
                     <div className="overflow-hidden">
                       <p className="p-2 text-center">9</p>
                       <Separator />
-                      <p className="p-2 text-center">⭕️</p>
+                      <Circle className="m-2" />
                       <Separator />
-                      <p className="p-2 text-center">❌</p>
+                      <X className="m-2" />
                     </div>
                   </div>
                 </div>
